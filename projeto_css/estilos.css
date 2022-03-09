@@ -13,6 +13,7 @@ body
     height: 500px;
     background-position: right center;
     background-size:cover;
+    border-top: 1px solid transparent;
 }
 
 .hero-content
@@ -69,4 +70,25 @@ main
 .cards li img
 {
     margin-bottom: 0;
+}
+
+.nav-item
+{
+    display: inline-block;
+    list-style: none;
+    float: right;
+    border: 1px solid white;
+    margin-right: 20px;
+}
+
+.nav-item a 
+{
+    padding: 10px;
+    display: block;
+    background-color: rgba(0,0,0,0.2);
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
 }
