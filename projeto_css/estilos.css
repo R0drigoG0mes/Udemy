@@ -30,6 +30,14 @@ body
     text-shadow: 3px 3px 2px #333;
 }
 
+.hero-content p
+{
+    background-color: rgba(0,0,0,.8);
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
 main
 {
     width: 80%;
@@ -39,37 +47,40 @@ main
 .content-section
 {
     background-color: white;
-    padding: 10px;
+    padding: 15px;
     margin-top: 15px;
+    overflow: auto;
 }
 
-.cards
+.card
 {
-    display: inline-block;
-    list-style: none;
-    margin: auto;
+    float: left;
+    width: 32%;
+    box-sizing: border-box;
 }
 
-.cards li
+#card1, #card2 
 {
-    float: right;
-    margin: 0px 10px 0px 10px;
+    margin-right: 2%;
 }
 
-.cards p
+.card
 {
-    background-color: #333;
-    color: rgb(214, 214, 214);
-    margin-top: 0;
-    padding: 10px 0px 10px 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 0.8em;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    margin: 0;
 }
 
-.cards li img
+.card p 
 {
-    margin-bottom: 0;
+    display: block;
+    padding: 15px;
+    margin: 0;
+}
+
+.card img 
+{
+    width: 100%;
 }
 
 .nav-item
