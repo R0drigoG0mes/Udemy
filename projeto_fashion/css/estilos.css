@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+/*Estilos Gerais*/
+
+:root
+{
+    --fonte: tahoma, arial, sans-serif;
+    --cor-font-nav: #425564;
+    --cor-portfolio-h1: #252525;
+    --cor-portfolio-p:#555;
+    --cor-about: #003d52;
+}
+
+*
+{
+
+}
+
+body
+{
+    font-family: var(--fonte);
+    margin: 0;
+    padding: 0;
+}
+
+/*Divisão Principal*/
+
+#principal
+{
+
+width: 1024px;
+margin: 20px auto;
+
+}
+
+/*Header*/
+
+.header-top
+{
+    height: 50px;
+    background-color: #162028;
+    position: relative;
+}
+
+.logotipo
+{
+    margin: 5px 0px 0px 155px;
+}
+
+/*Barra de Navegação (NavBar)*/
+
+.header-nav
+{
+
+position: absolute;
+top: 0;
+right: 0;
+height: 100%;
+
+}
+
+.header-nav ul
+{
+
+margin: 0px;
+padding: 0px;
+
+}
+
+.header-nav li
+{
+
+display: inline-block;
+list-style: none;
+margin: 0px 15px 0px 0px;
+padding: 13px;
+
+}
+
+.header-nav a
+{
+
+text-decoration: none;
+color: var(--cor-font-nav);
+text-transform: uppercase;
+font-size: 12px;
+letter-spacing: 5px;
+
+}
+
+/*Portfolio*/
+
+.portfolio
+{
+    padding: 50px 100px;
+    text-align: center;
+}
+
+.portfolio h1
+{
+
+font-size: 36px;
+color: var(--cor-portfolio-h1);
+
+}
+
+.portfolio p
+{
+    font-size: 16px;
+    line-height: 2;
+    color: var(--cor-portfolio-p);
+}
+
+/*Imagens dos modelos - Gallery*/
+
+.gallery
+{
+
+color: var(--cor-portfolio-p);
+padding: 0px 100px 50px 100px;
+overflow: auto;
+
+}
+
+.gallery-card
+{
+
+width: 32%;
+float: left;
+text-align: center;
+}
+
+.gallery-title
+{
+
+text-transform: uppercase;
+letter-spacing: 4px;
+font-weight: bold;
+font-size: 16px;
+
+}
+
+/*About - Sobre*/
+
+.about
+{
+    background-color: var(--cor-about);
+}
