@@ -9,6 +9,9 @@
     --cor-portfolio-h1: #252525;
     --cor-portfolio-p:#555;
     --cor-about: #003d52;
+    --cor-address: #143f52;
+    --cor-rodape: #0b171f;
+    --cor-texto-rodape: #6f8597;
 }
 
 *
@@ -85,6 +88,13 @@ color: var(--cor-font-nav);
 text-transform: uppercase;
 font-size: 12px;
 letter-spacing: 5px;
+transition: color .5s linear;
+}
+
+.header-nav a:hover
+{
+
+color: white;
 
 }
 
@@ -145,4 +155,78 @@ font-size: 16px;
 .about
 {
     background-color: var(--cor-about);
+    padding: 100px;
+    color: white;
+    background-image: url('../imagens/bg_detalhe.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.about h2
+{
+
+text-transform: uppercase;
+font-size: 50px;
+font-weight: normal;
+}
+
+.about p
+{
+
+line-height: 1.5;
+width: 70%;
+
+}
+
+/*Contato*/
+
+#contact
+{
+
+margin: 50px 0px;
+
+}
+
+#contact address
+{
+
+color: var(--cor-address);
+text-transform: uppercase;
+font-size: 26px;
+font-style: normal;
+text-align: center;
+font-weight: bold;
+
+}
+
+/*Google Maps - Localização*/
+
+.maps
+{
+
+width: 100%;
+height: 450px;
+margin-top: 15px;
+
+}
+
+.maps iframe
+{
+
+width: 100%;
+
+}
+
+/*Footer - Rodapé*/
+
+.rodape
+{
+
+background-color: var(--cor-rodape);
+padding: 25px;
+font-size: 12px;
+color: var(--cor-texto-rodape);
+letter-spacing: 5px;
+text-align: center;
+
 }
