@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+
+        h1
+        {
+
+            font-style: italic;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            font-size: 40px;
+            text-align: center;
+
+        }
+
+        body
+        {
+
+            font-family: Consolas;
+            background-color: lightyellow;
+
+
+        }
+
+        td
+        {
+
+            border: solid 1px gainsboro;
+            padding: 5px;
+            text-align: center;
+
+        }
+
+        table
+        {
+            border-collapse:collapse;
+            width: 50%;
+            margin: auto;
+        }
+
+        th
+        {
+
+            background-color: black;
+            border: solid 1px gainsboro;
+            padding: 6px;
+            font-style: italic;
+            color: white;
+
+        }
+
+        caption
+        {
+
+            margin-bottom: 10px;
+            font-style: italic;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+<h1>Tabelas</h1>
+
+<table>
+
+    <caption>Tabela de preços dos cursos</caption>
+
+    <thead>
+
+        <tr>
+
+            <th>Área</th>
+            <th>Curso</th>
+            <th>Investimento</th>
+
+        </tr>
+
+    </thead>
+
+    <tfoot>
+
+        <tr>
+            <td colspan="3">Valores sujeitos a alteração sem prévio aviso</td>
+        </tr>
+
+    </tfoot>
+
+    <tbody>
+
+        <tr>
+            <td rowspan="3">Design</td>
+            <td>InDesign</td>
+            <td><R1>1.000,00</R1></td>
+        </tr>
+
+        <tr>
+            <td>Photoshop</td>
+            <td><R1>1.000,00</R1></td>
+        </tr>
+
+        <tr>
+            <td>Ilustrator</td>
+            <td><R1>1.000,00</R1></td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">Development</td>
+            <td>HTML5</td>
+            <td><R1>1.000,00</R1></td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td><R1>1.000,00</R1></td>
+        </tr>
+
+        <tr>
+            <td>JavaScript</td>
+            <td><R1>1.000,00</R1></td>
+        </tr>
+
+        <tr>
+            <td>PHP</td>
+            <td><R1>1.000,00</R1></td>
+        </tr>
+
+    </tbody>
+
+</table>
+  
+</body>
+</html>
