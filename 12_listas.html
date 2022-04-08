@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Rodrigo Gomes Cordeiro">
+    <meta name="description" content="Descrição sobre a página web">
+    <meta name="keywords" content="Palavras chave da página web separadas por vírgulas"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+    li ul
+    {
+
+        height: 0px;
+        overflow: hidden;
+        transition: height .5s;
+
+    }
+
+    li:hover
+    {
+
+    background-color: #CCC;
+
+    }
+
+    li:hover ul
+    {
+
+        height: 70px;
+
+    }
+    
+    </style>
+
+</head>
+<body>
+
+<h1>Aninhamento de listas</h1>
+
+<ul>
+
+<li>item 1</li>
+<li>item 2</li>
+<li>item 3</li>
+<li>Mostrar &#8595;
+
+    <ul>
+
+        <li>item 2.1</li>
+        <li>item 2.2</li>
+        <li>item 2.3</li>
+
+    </ul>
+
+</li>
+
+</ul>
+
+<hr>
+
+<h1>Listas de Definições</h1>
+
+<dl>
+
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação de hipertexto</dd>
+
+    <dt>CSS</dt>
+    <dd>Linguagem de folhas de estilo em cascata</dd>
+
+</dl>
+
+<hr>
+
+<dl>
+    <dt>www</dt>
+    <dt>internet</dt>
+    <dd>rede mundial de computadores</dd>
+
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação</dd>
+    <dd>Linguagem script para internet</dd>
+    <dd>script para rodar no browser</dd>
+</dl>
+
+</body>
+</html>
