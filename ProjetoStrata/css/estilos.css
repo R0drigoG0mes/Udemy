@@ -108,6 +108,20 @@ blockquote
 
 }
 
+blockquote p
+{
+
+    margin-bottom: .5em;
+
+}
+
+blockquote p:last-child
+{
+
+    margin-bottom: 0;
+
+}
+
 code
 {
 
@@ -142,6 +156,16 @@ li
 {
 
     padding-left: .5em;
+
+}
+
+.hidden
+{
+
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: block;
 
 }
 
@@ -228,6 +252,18 @@ li
     display: inline-block;
     border-radius: 5px;
 
+}
+
+.main-footer
+{
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 35%;
+    padding: 0px 54px 72px 0;
+    box-sizing: border-box;
+    text-align: right;
 }
 
 /*=======GRID=======*/
