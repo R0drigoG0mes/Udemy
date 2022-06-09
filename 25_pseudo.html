@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Estrutura Base</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Rodrigo Gomes Cordeiro">
+        <meta name="description" content="Descrição sobre a página web">
+        <meta name="keywords" content="Palavras chave da página web separadas por vírgulas"> 
+        
+        <style>
+
+            a:focus
+            {
+
+                background-color: red;
+
+            }
+
+            input[type="checkbox"]
+            {
+
+                width: 100px;
+                height: 100px;
+
+            }
+
+            input[type="text"]:focus
+            {
+
+                border: 2px solid rgb(48, 48, 255);
+                outline: none;
+
+            }
+
+            input[type="checkbox"]:checked
+            {
+
+                width: 10px;
+                height: 10px;
+
+            }
+
+            button:disabled
+            {
+
+                background-color: chartreuse;
+
+            }
+
+            p
+            {
+
+                color: gold;
+                background-color: crimson;
+                font-family: consolas;
+                font-style: italic;
+
+            }
+
+            p:empty::before
+            {
+
+                content: "é só não morrer";
+
+            }
+
+            input::placeholder
+            {
+
+                color: red;
+
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <label for=""><input type="checkbox" value="sim">Aceito o contrato</label>
+
+        <button>vai</button>
+        <button disabled>volta</button>
+
+        <p>Parágrafo 1</p>
+        <p></p>
+        <p></p>
+
+        <hr>
+
+        <input type="text">
+
+        <hr>
+
+        <ul>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+        </ul>
+
+        <hr>
+
+        <div class="" tabindex="1">Div 1</div>
+        <div class="" tabindex="2">Div 2</div>
+        <div class="" tabindex="3">Div 3</div>
+
+        <hr>
+
+        <input type="text" value="valor inicial">
+        <input type="text" value="valor inicial" readonly>
+        <input type="text" value="valor inicial" disabled>
+        <input type="text" placeholder="valor do placeholder">
+
+    </body>
+</html>
