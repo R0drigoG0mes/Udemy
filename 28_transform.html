@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Transform</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Rodrigo Gomes Cordeiro">
+        <meta name="description" content="Descrição sobre a página web">
+        <meta name="keywords" content="Palavras chave da página web separadas por vírgulas">
+        
+        <style>
+
+            html,body
+            {
+
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+
+            }
+
+            .div1
+            {
+
+                width: 150px;
+                height: 50px;
+                background-color: red;
+
+            }
+
+            .div2
+            {
+
+                width: 150px;
+                height: 50px;
+                background-color: gold;
+                position: relative;
+                left: 20%;
+
+            }
+
+            .div3
+            {
+
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+
+            }
+
+            .div3-interna
+            {
+
+                background-color: greenyellow;
+                transform: translateX(25%);
+
+            }
+
+            .div4
+            {
+
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+
+            }
+
+            .div4-interna
+            {
+
+                background-color: greenyellow;
+                transform: translateX(25%);
+                transform: rotate(45deg);
+
+            }
+
+            #teste1
+            {
+
+                z-index: 5;
+                position: relative;
+                bottom: 2px;
+
+            }
+
+            .div4-interna
+            {
+
+                z-index: 0;
+                position: relative;
+
+            }
+
+            .rato, .rato2
+            {
+                border: 2px solid blue;
+                height: 50px;
+                width: 90%;
+                margin: auto;
+
+            }
+
+            .rato
+            {
+
+                background-color: orangered;
+                position: relative;
+                z-index: 5;
+
+            }
+
+            .rato2
+            {
+
+                background-color: cornflowerblue;
+                position: relative;
+                bottom: 10px;
+
+            }
+
+            .div5
+            {
+
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+
+            }
+
+            .div5-interna
+            {
+
+                background-color: greenyellow;
+                transform: rotate(-5deg);
+                transform-origin: bottom left;
+
+            }
+
+            .div6
+            {
+
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+
+            }
+
+            .div6-interna
+            {
+
+                background-color: greenyellow;
+                transform: rotate(10deg) translateX(10%);
+                transform-origin: bottom left;
+
+            }
+
+            .div7
+            {
+
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+
+            }
+
+            .div7-interna
+            {
+
+                background-color: greenyellow;
+                transform: rotate(-5deg);
+                transform-origin: bottom left;
+
+            }
+
+            .div8
+            {
+
+                height: 100px;
+                width: 100px;
+                background-color: orange;
+                transform: skew(10deg,60deg);
+
+            }
+
+            .div9
+            {
+
+                margin-top: 200px;
+                height: 30px;
+                width: 30px;
+                background-color: chartreuse;
+                transition: transform .5s;
+                margin: 100px 0px 50px 100px;
+
+            }
+
+            .div9:hover
+            {
+
+                transform: scale(5,5);
+
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <br>
+        <hr>
+        <div class="div3">
+            <div class="div3-interna">conteúdo qualquer</div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates ullam magni, vitae quod voluptatibus sit inventore velit nam alias eaque expedita dicta sint, porro illum distinctio modi excepturi quibusdam?</p>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="div4">
+            <div class="div4-interna">conteúdo qualquer</div>
+            <p id="teste1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates ullam magni, vitae quod voluptatibus sit inventore velit nam alias eaque expedita dicta sint, porro illum distinctio modi excepturi quibusdam?</p>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="rato"></div>
+        <div class="rato2"></div>
+        <br>
+        <hr>
+        <br>
+        <div class="div6">
+            <div class="div6-interna">conteúdo qualquer</div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates ullam magni, vitae quod voluptatibus sit inventore velit nam alias eaque expedita dicta sint, porro illum distinctio modi excepturi quibusdam?</p>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="div7">
+            <div class="div7-interna">conteúdo qualquer</div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates ullam magni, vitae quod voluptatibus sit inventore velit nam alias eaque expedita dicta sint, porro illum distinctio modi excepturi quibusdam?</p>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="div8">div8</div>
+        <div class="div9">div9</div>
+
+    </body>
+</html>
