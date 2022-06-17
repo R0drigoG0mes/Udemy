@@ -23,6 +23,88 @@
 
             }
 
+            a[href$=".pdf"]::after
+            {
+
+                content: url('imagens/wats.png');
+                display: inline-block;
+                margin: 5px;
+
+            }
+
+            .chk
+            {
+
+                display: inline-block;
+                border: 2px solid #bbb;
+                background-color: #ddd;
+                width: 15px;
+                height: 15px;
+                margin-right: 10px;
+
+            }
+
+            label
+            {
+
+                height: 15px;
+                display: inline-block;
+
+            }
+
+            input[type="checkbox"]
+            {
+
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                visibility: hidden;
+                display: inline-block;
+                margin: 0;
+
+            }
+
+            input[type="checkbox"]:checked + label .chk
+            {
+
+                background-color: #434343;
+                position: relative;
+
+            }
+
+            input[type="checkbox"]:checked::selection, label::selection , .chk::selection
+            {
+
+                background-color: transparent;
+
+            }
+
+            input[type="checkbox"]:checked + label .chk::before
+            {
+
+                content: '';
+                display: block;
+                position: absolute;
+                right: 4px;
+                left: 4px;
+                bottom: 4px;
+                top: 0px;
+                border: 2px solid white;
+                transform: rotate(45deg);
+                border-top-color: transparent;
+                border-left-color: transparent;
+                box-sizing: border-box;
+                border-radius: 5px;
+
+            }
+
+            input[type="checkbox"] + label .chk
+            {
+
+                border-radius: 5px;
+
+            }
+
         </style>
     
     </head>
@@ -31,5 +113,13 @@
         <a href="https://www.serfrontend.com.br" target="_blank">link externo</a>
         <br>
         <a href="qq.pdf">download do PDF</a>
+
+        <br>
+        <hr>
+        <br>
+
+        <input type="checkbox" name="qq" id="chk">
+        <label for="chk"><span class="chk"></span> Li e aceitiz o contratiz</label>
+
     </body>
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        input[type="checkbox"]
+        {
+            height: 1px;
+            width: 1px;
+            visibility: hidden;
+            overflow: hidden;
+        }
+
+        span
+        {
+
+            height: 25px;
+            width: 55px;
+            background-color: #ddd;
+            display: inline-block;
+            border-radius: 30px;
+            position: relative;
+
+        }
+
+        span::after
+        {
+            content: '';
+            position: absolute;
+            height: 17px;
+            width: 17px;
+            border-radius: 50%;
+            background-color: white;
+            top: 4px;
+            left: 3px;
+
+        }
+
+        input[type="checkbox"]:checked + span
+        {
+
+            background-color: rgb(57, 194, 57);
+            transition: background-color .5s;
+
+        }
+
+        input[type="checkbox"]:checked + span::after
+        {
+
+            content: '';
+            transform: translateX(30px);
+            transition: transform .5s;
+
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    <label for="box">
+        <input type="checkbox" name="qq" id="box">
+        <span></span>
+        Estudos
+    </label>
+
+    <label for="seila">
+        <input type="checkbox" id="seila">
+        <span></span>
+        Então ele é?
+    </label>
+
+    <label for="k">
+        <input type="checkbox" id="k">
+        <span></span>
+        queria chocolate?
+    </label>
+
+</body>
+</html>
