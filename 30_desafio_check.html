@@ -8,11 +8,18 @@
 
     <style>
 
+        label input:focus + span
+        {
+
+            outline: 1px solid lightseagreen;
+
+        }
+
         input[type="checkbox"]
         {
             height: 1px;
             width: 1px;
-            visibility: hidden;
+            opacity: 0;
             overflow: hidden;
         }
 
@@ -23,7 +30,7 @@
             width: 55px;
             background-color: #ddd;
             display: inline-block;
-            border-radius: 30px;
+            border-radius: 12.5px;
             position: relative;
 
         }
@@ -45,7 +52,7 @@
         {
 
             background-color: rgb(57, 194, 57);
-            transition: background-color .5s;
+            transition: all .5s ease-in-out;
 
         }
 
@@ -54,7 +61,7 @@
 
             content: '';
             transform: translateX(30px);
-            transition: transform .5s;
+            transition: all .5s ease-in-out;
 
         }
         
