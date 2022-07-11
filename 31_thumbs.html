@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Thumbs</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Rodrigo Gomes Cordeiro">
+        <meta name="description" content="Descrição sobre a página web">
+        <meta name="keywords" content="Palavras chave da página web separadas por vírgulas"> 
+    
+        <style>
+
+            a
+            {
+
+                display: inline-block;
+                margin: 10px;
+                position: relative;
+
+            }
+
+            img
+            {
+
+                max-width: 100%;
+                display: block;
+
+            }
+
+            a::before
+            {
+
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: transparent;
+                transition: all .5s;
+
+            }
+
+            a:hover::before
+            {
+
+                background-color: rgba(0, 0, 0, 0.5);
+
+            }
+
+            a::after
+            {
+
+                opacity: 0;
+
+            }
+
+            a:hover::after
+            {
+
+                content: 'Veja mais';
+                display: block;
+                position: absolute;
+                border: 3px solid white;
+                color: white;
+                top: 50%;
+                left: 50%;
+                padding: 10px 20px;
+                transform: translate(-50%,-50%);
+                opacity: 1;
+
+            }
+
+
+            body
+            {
+
+                font-family: consolas;
+
+            }
+
+
+
+        </style>
+    
+    </head>
+    <body>
+
+        <section>
+
+            <article>
+                <a href="#">
+                    <img src="imagens/card_01.png" alt="sei la">
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <img src="imagens/card_02.jpg" alt="sei la">
+                </a>
+            </article>
+
+
+            <article>
+                <a href="#">
+                    <img src="imagens/card_03.jpg" alt="sei la">
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <img src="imagens/card_04.jpg" alt="sei la">
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <img src="imagens/card_05.jpg" alt="sei la">
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <img src="imagens/card_01.png" alt="sei la">
+                </a>
+            </article>
+
+
+        </section>
+
+    </body>
+</html>
