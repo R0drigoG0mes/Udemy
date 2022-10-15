@@ -12,16 +12,38 @@
             body{
                 background-color: yellow;
             }
-
+/* 
             .teste{
                 background-color: orangered;
                 width: 320px;
                 height: 50px;
+            } */
+
+            .container{
+                background-color: white;
+                padding: 10px;
+            }
+            .container div{
+                background-color: #ccc;
+                margin-bottom: 15px;
+                height: 150px;
             }
 
-            @media screen and (max-width:600px) {
+            .clearfix::after{
+                content: ' ';
+                display: block;
+                clear: both;
+            }
+
+            @media screen and (min-width:400px) {
                 body{
                     background-color: blue;
+                }
+
+                .container div{
+                    width: calc(50% - 30px);
+                    float: left;
+                    margin: 15px;
                 }
             }
         </style>
@@ -33,9 +55,9 @@
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero ducimus voluptates, temporibus magnam sit. Iure, totam deleniti possimus, dignissimos quo ipsa officiis quas sint corporis velit qui, in voluptatum.</p>
 
-        <div class="teste"></div>
+        <!-- <div class="teste"></div> -->
 
-        <div class="container">
+        <div class="container clearfix">
             <div>Div1</div>
             <div>Div2</div>
         </div>
