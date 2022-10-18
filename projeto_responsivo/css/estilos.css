@@ -4,13 +4,26 @@
     /*Paleta de Cores*/
     --botao:#58c4c4;
     --hover-botao:#37a0a0;
+    --hover-link:#e7d9fc;
     --fonte-2:#a87bb7;
     --fonte-1:#612674;
+    --fonte-3:#652e78;
+    --fonte-4:#83969f;
+    --fonte-5:#713a84;
     --fundo-2:#f6f6f6;
+    --fundo-3:#25303e;
+    --fundo-4:#303d4c;
+    --fundo-5:#521a66;
 }
 
 h1,h2,h3,h3,h5,h6{
     font-family: 'Oxygen',sans-serif;
+}
+
+.clearfix::after{
+    content: ' ';
+    display: block;
+    clear: both;
 }
 
 .button-default{
@@ -57,6 +70,10 @@ h1,h2,h3,h3,h5,h6{
     padding: 1em;
 }
 
+.top-nav a:hover{
+    background-color: #652e78;
+}
+
 .top-main{
     text-align: center;
 }
@@ -76,4 +93,114 @@ h1,h2,h3,h3,h5,h6{
     color: var(--fonte-2);
     font-size: 1em;
     line-height: 1.5;
+}
+
+.midle-content{
+    padding: 2em;
+    background-color: var(--fundo-2);
+
+}
+
+.midle-content-title{
+    font-size: 1.25em;
+    color: var(--fonte-3);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.midle-content p{
+    line-height: 1.5;
+    color: #222;
+}
+
+.midle-content span[class^=icon]{
+    font-size: 4em;
+    color: var(--fonte-3);
+}
+
+.main-content{
+    padding: 2em;
+}
+
+.main-content p{
+    line-height: 1.2em;
+}
+
+.main-content-article{
+    margin-bottom: 3.5em;
+}
+
+.normal{
+    font-weight: normal;
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+
+.footer{
+    background-color: var(--fundo-3);
+    color: var(--fonte-4);
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.footer-menushare{
+    background-color: var(--fundo-4);
+    padding: .5em;
+}
+
+.footer-menushare li{
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.footer-menushare a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (min-width: 48.75em) {
+
+    .top-header-logo{
+        float: left;
+    }
+
+    .top-nav{
+        background-color: transparent;
+        float: right;
+        margin-top: 1.8em;
+    }
+
+    .top-nav ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .top-nav li{
+        display: inline-block;
+    }
+
+    .top-nav a{
+        color: var(--fonte-5);
+    }
+
+    .top-nav a:hover{
+        background-color: var(--hover-link);
+    }
+
+    .top-content{
+        background-color: var(--fundo-5);
+    }
+    .top-content-title{
+        color: white;
+    }
+    .top-content-subtitle{
+        color: white;
+    }
 }
