@@ -20,10 +20,15 @@ h1,h2,h3,h3,h5,h6{
     font-family: 'Oxygen',sans-serif;
 }
 
-.clearfix::after{
+.clearfix::after, .row::after{
     content: ' ';
     display: block;
     clear: both;
+}
+
+.maxwidth{
+    max-width: 1124px;
+    margin: 0 auto;
 }
 
 .button-default{
@@ -81,6 +86,16 @@ h1,h2,h3,h3,h5,h6{
 .top-content{
     padding: 1em;
     background-color: var(--fundo-2);
+}
+
+.icon-play{
+    height: 5em;
+    display: none;
+}
+
+.icon-play img{
+    height: 100%;
+    width: 100%;
 }
 
 .top-content-title{
@@ -171,6 +186,10 @@ h1,h2,h3,h3,h5,h6{
         float: left;
     }
 
+    .icon-play{
+        display: block;
+    }
+
     .top-nav{
         background-color: transparent;
         float: right;
@@ -202,5 +221,50 @@ h1,h2,h3,h3,h5,h6{
     }
     .top-content-subtitle{
         color: white;
+    }
+    .col-1_4{
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+
+    .main-content-article .button-default{
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 62.5em) {
+    .top-content{
+        background: #521a66 url('../images/bg_topo_1198x670.jpg');
+        background-position: center bottom;
+        height: 20em;
+        padding-top: 17em;
+    }
+}
+
+@media only screen and (min-width: 74em) {
+    .top-content{
+        background-image: url('../images/bg_topo_1600x1374.jpg');
+        padding: 19em 20em 10em;
+        background-position: center top;
+    }
+
+    .icon-play{
+        height: 7em;
+    }
+
+    .col-1_4{
+        width: 23%;
+        margin: 1%;
+    }
+
+    .col-1_2{
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+
+    .main-content-article .button-default{
+        float: none;
     }
 }
